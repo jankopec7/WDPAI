@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <title>Register</title>
 </head>
 <body>
     <div class="logo">
@@ -15,11 +15,13 @@
         </h1>
     </div>
     <div class="login-form">
-        <form class="login" action="login" method="POST">
+        <form class="login" action="register" method="POST">
+            <input name="nickname" type="text" placeholder="Nickname">
             <input name="email" type="text" placeholder="Email">
             <input name="password" type="password" placeholder="Password">
-            <button class="button_1" type="submit">Log in</button>
-            <a href="register.html">Register</a>
+            <input name="confirmPassword" type="password" placeholder="Repeat password">
+            <button class="button_1" type="submit" id="register">Register</button>
+            <a href="login.html">Back</a>
         </form>
     </div>
 </body>
