@@ -21,5 +21,9 @@ class Router {
         if (!array_key_exists($action, self::$routes)) {
             die("Wrong url!");
         }
+        $controller = self::$routes[$action];
+            $object = new $controller;
+
+            $object->$action();
     }
 }
