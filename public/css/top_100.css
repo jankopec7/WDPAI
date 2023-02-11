@@ -1,0 +1,22 @@
+.list1 {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+    position: relative;
+    top: 8vh;
+}
+
+.list1 td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+}
+
+th, td {
+    text-align: center;
+    border-bottom: 3px #137131 solid;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    font-size: 35px;
+    width: 75vw;
+}

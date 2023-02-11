@@ -1,0 +1,20 @@
+.list1 {
+    position: relative;
+    top: 8vh;
+}
+
+th, td {
+    text-align: center;
+}
+
+table {
+    position: relative;
+    left: -5vw;
+    font-size: 30px;
+    width: 45vw;
+}
+
+.suma_pkt {
+    font-size: 35px;
+    font-weight: bold;
+}

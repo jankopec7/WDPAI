@@ -1,0 +1,16 @@
+#play{
+    width: 22vw;
+    height: 12vh;
+    border: 6px solid #0e6cdb;
+}
+
+.list1 {
+    position: relative;
+    top: 8vh;
+}
+
+.question_count {
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}

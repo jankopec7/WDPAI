@@ -1,11 +1,4 @@
-#logo2 {
-    width: 17vh;
-    position: absolute;
-    top: 3vh;
-    left: 1vw;
-}
-
-.buttons #b1{
+.buttons #A,#B, #C,#D{
     background: #f8d582;
     border: 6px solid #0e6cdb;
     border-radius: 1em;
@@ -13,12 +6,12 @@
     color: #18893c;
     font-size: 6vh;
     font-weight: bold;
-    width: 77vw;
+    width: 37vw;
     height: 34vh;
     cursor: pointer;
-
 }
-.buttons #b2,#b3{
+
+.buttons #b1,#b2, #b3,#b4{
     background: #f8d582;
     border: 6px solid #0e6cdb;
     border-radius: 1em;
@@ -39,17 +32,77 @@
 
 #b2{
     position: absolute;
-    top: 60vh;
-    left: 10vw;
+    top: 20vh;
+    left: 50vw;
 }
 
 #b3{
     position: absolute;
     top: 60vh;
+    left: 10vw;
+}
+
+#b4{
+    position: absolute;
+    top: 60vh;
     left: 50vw;
 }
 
-#b1:hover,#b2:hover,#b3:hover {
+#A{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+}
 
+#B{
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+}
+
+#C{
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+}
+
+#D{
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover {
     background: #FEC337;
+}
+
+#A:hover,#B:hover,#C:hover,#D:hover {
+    background: #FEC337;
+}
+
+.form {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    border-radius: 0;
+    gap: 1em;
+    width: 50vw;
+    height: 52vh;
+    background: none;
+    border: 6px solid #0e6cdb;
+}
+
+.logout{
+    background: none;
+    border: none;
+}
+
+.button_1{
+    width: 9vw !important;
+    position: absolute;
+    font-size: 20px; !important;
+    border-radius: 15px;
+    top: 17vh;
+    left: 1vw;
+    padding: 0;
 }

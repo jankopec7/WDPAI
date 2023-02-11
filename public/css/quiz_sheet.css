@@ -1,0 +1,48 @@
+#i1 {
+    font-size: 27px !important;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.buttons {
+    overflow: auto;
+}
+
+.question_no {
+    color: #F8D582;
+    position: absolute;
+    top: 17vh;
+    left: 1vw;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.points {
+    color: #00FF00;
+    position: absolute;
+    top: 26vh;
+    left: 1vw;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.points-wrong {
+    color: #FF0000;
+    position: absolute;
+    top: 32vh;
+    left: 1vw;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+form {
+    position: absolute;
+    top: 5px !important;
+    left: 10px;
+    border-radius: 0;
+    gap: 1em;
+    width: 0 !important;
+    height: 0 !important;
+    background: none;
+    border: 0 !important;
+}

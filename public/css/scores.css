@@ -27,12 +27,13 @@
 
 .list1{
     position: relative;
-    top: 10vh;
+    top: 8vh;
 }
 
 .button_play {
     position: absolute;
     top: 43vh;
+    left: 19vw;
     border: 6px solid #0e6cdb;
     border-radius: 0.7em;
     margin: 3vh;
@@ -41,3 +42,4 @@
     width: 37vw;
     height: 17vh;
 }
+
