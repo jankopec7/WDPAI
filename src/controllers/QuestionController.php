@@ -27,7 +27,6 @@ class QuestionController extends AppController {
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
 
-            // TODO create new project object and save it in database(potem outnąć)
             $question = new Question($_POST['question_line'], $_POST['answer1'], $_POST['answer2'],$_POST['answer3'],$_POST['answer4'],$_POST['correct_answer'],$_POST['id_category'], $_FILES['file']['name']);
             $this->questionRepository->addQuestion($question);
 

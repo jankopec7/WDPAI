@@ -19,6 +19,11 @@ class DefaultController extends AppController
         $this->render('main_menu');
     }
 
+    public function play_with_friends()
+    {
+        $this->render('play_with_friends');
+    }
+
     public function top_100()
     {
         $this->render('top_100');

@@ -17,19 +17,6 @@ class QuizController extends AppController
         $this->questionRepository = new QuestionRepository();
     }
 
-    private function addQuizQuestions(Quiz &$quiz): void
-    {
-        $max_id_questions = $this->quizRepository->get_max_id_question();
-        $count_of_questions = $quiz->getCountOfQuestions();
-        for($i = 1; $i <= $count_of_questions; $i++)
-        {
-            $id_question = rand(1, $max_id_questions);
-            $question = $this->questionRepository->getQuestion($id_question);
-            $question->setId($id_question);
-            $quiz->add_question_to_quiz($question);
-            setcookie('id_question'.$i, $id_question, time() + (86400 * 30), "/");
-        }
-    }
 
     public function solo_game()
     {
@@ -104,5 +91,19 @@ class QuizController extends AppController
         $this->render('top_100', [
             'points' => $points
         ]);
+    }
+
+    private function addQuizQuestions(Quiz &$quiz): void
+    {
+        $max_id_questions = $this->quizRepository->get_max_id_question();
+        $count_of_questions = $quiz->getCountOfQuestions();
+        for($i = 1; $i <= $count_of_questions; $i++)
+        {
+            $id_question = rand(1, $max_id_questions);
+            $question = $this->questionRepository->getQuestion($id_question);
+            $question->setId($id_question);
+            $quiz->add_question_to_quiz($question);
+            setcookie('id_question'.$i, $id_question, time() + (86400 * 30), "/");
+        }
     }
 }
