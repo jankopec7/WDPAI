@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/public/css/register.css">
+    <script type="text/javascript" src="./public/js/register.js" defer></script>
     <title>Register</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <input name="nickname" type="text" placeholder="Nickname">
         <input name="email" type="text" placeholder="Email">
         <input name="password" type="password" placeholder="Password">
-        <input name="confirmPassword" type="password" placeholder="Repeat password">
+        <input name="confirmedPassword" type="password" placeholder="Repeat password">
         <button class="button_1" type="submit" id="register">Register</button>
         <a href="/login">Back</a>
         <p style="color: red; font-size: 21px; font-weight: bold">
